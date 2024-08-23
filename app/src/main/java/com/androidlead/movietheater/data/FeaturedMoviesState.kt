@@ -3,7 +3,7 @@ package com.androidlead.movietheater.data
 import androidx.annotation.DrawableRes
 import com.androidlead.movietheater.R
 
-data class FeaturedMovieItem(
+data class FeaturedMovieState(
     val id: Int,
     @DrawableRes val img: Int,
     val title: String,
@@ -12,7 +12,7 @@ data class FeaturedMovieItem(
 )
 
 val FeatureMoviesData = listOf(
-    FeaturedMovieItem(
+    FeaturedMovieState(
         id = 0,
         img = R.drawable.img_movie_poster_2,
         title = "Parasite",
@@ -23,7 +23,7 @@ val FeatureMoviesData = listOf(
             "8:30 PM"
         )
     ),
-    FeaturedMovieItem(
+    FeaturedMovieState(
         id = 1,
         img = R.drawable.img_movie_poster_0,
         title = "Frozen II",
@@ -34,7 +34,7 @@ val FeatureMoviesData = listOf(
             "4:00 PM"
         )
     ),
-    FeaturedMovieItem(
+    FeaturedMovieState(
         id = 2,
         img = R.drawable.img_movie_poster_4,
         title = "Weathering with You",
@@ -45,7 +45,7 @@ val FeatureMoviesData = listOf(
             "8:30 PM"
         )
     ),
-    FeaturedMovieItem(
+    FeaturedMovieState(
         id = 3,
         img = R.drawable.img_movie_poster_3,
         title = "Midway",

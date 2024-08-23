@@ -3,7 +3,6 @@ package com.androidlead.movietheater.ui.components.section
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -23,13 +22,13 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.androidlead.movietheater.data.FeaturedMovieItem
+import com.androidlead.movietheater.data.FeaturedMovieState
 import com.androidlead.movietheater.ui.components.SectionHeader
 
 @Composable
 fun FeaturedMoviesSection(
     modifier: Modifier = Modifier,
-    data: List<FeaturedMovieItem>
+    data: List<FeaturedMovieState>
 ) {
     Column(
         modifier = modifier.padding(horizontal = 18.dp),
@@ -57,7 +56,7 @@ fun FeaturedMoviesSection(
 @Composable
 private fun FeaturedMovie(
     modifier: Modifier = Modifier,
-    item: FeaturedMovieItem
+    item: FeaturedMovieState
 ) {
     Column(
         modifier = modifier.width(224.dp)
