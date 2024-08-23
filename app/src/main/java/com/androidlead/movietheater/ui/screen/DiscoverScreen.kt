@@ -10,8 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.androidlead.movietheater.data.ComingSoonData
 import com.androidlead.movietheater.data.FeatureMoviesData
+import com.androidlead.movietheater.data.RecentlyWatchedData
 import com.androidlead.movietheater.ui.components.section.ComingSoonSection
 import com.androidlead.movietheater.ui.components.section.FeaturedMoviesSection
+import com.androidlead.movietheater.ui.components.section.RecentlyWatchedSection
 
 @Composable
 fun DiscoverScreen(
@@ -31,6 +33,9 @@ fun DiscoverScreen(
         ComingSoonSection(
             data = ComingSoonData,
             modifier = Modifier.padding(horizontal = 18.dp)
+        )
+        RecentlyWatchedSection(
+            data = RecentlyWatchedData
         )
     }
 }

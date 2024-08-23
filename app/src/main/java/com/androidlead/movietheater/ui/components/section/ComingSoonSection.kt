@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.androidlead.movietheater.data.MovieThumbnail
+import com.androidlead.movietheater.data.MovieThumbnailState
 import com.androidlead.movietheater.ui.components.MovieThumbnail
 import com.androidlead.movietheater.ui.components.SectionHeader
 
@@ -16,7 +16,7 @@ import com.androidlead.movietheater.ui.components.SectionHeader
 @Composable
 fun ComingSoonSection(
     modifier: Modifier = Modifier,
-    data: List<MovieThumbnail>
+    data: List<MovieThumbnailState>
 ) {
     Column(
         modifier = modifier,

@@ -32,16 +32,14 @@ fun FeaturedMoviesSection(
     data: List<FeaturedMovieItem>
 ) {
     Column(
-        modifier = modifier,
+        modifier = modifier.padding(horizontal = 18.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp)
     ) {
         SectionHeader(
-            text = "Featured Movies",
-            modifier = Modifier.padding(horizontal = 18.dp)
+            text = "Featured Movies"
         )
         LazyRow(
-            contentPadding = PaddingValues(horizontal = 18.dp),
-            horizontalArrangement = Arrangement.spacedBy(24.dp)
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             items(
                 items = data,
