@@ -13,7 +13,7 @@ import com.androidlead.movietheater.data.FeatureMoviesData
 import com.androidlead.movietheater.data.RecentlyWatchedData
 import com.androidlead.movietheater.ui.components.section.ComingSoonSection
 import com.androidlead.movietheater.ui.components.section.FeaturedMoviesSection
-import com.androidlead.movietheater.ui.components.section.RecentlyWatchedSection
+import com.androidlead.movietheater.ui.components.section.HorizontalSection
 
 @Composable
 fun DiscoverScreen(
@@ -34,8 +34,9 @@ fun DiscoverScreen(
             data = ComingSoonData,
             modifier = Modifier.padding(horizontal = 18.dp)
         )
-        RecentlyWatchedSection(
-            data = RecentlyWatchedData
+        HorizontalSection(
+            data = RecentlyWatchedData,
+            name = "Recently Watched"
         )
     }
 }

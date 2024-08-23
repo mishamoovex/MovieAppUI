@@ -19,9 +19,10 @@ import com.androidlead.movietheater.ui.components.SectionHeader
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun RecentlyWatchedSection(
+fun HorizontalSection(
     modifier: Modifier = Modifier,
-    data: List<MovieThumbnailState>
+    data: List<MovieThumbnailState>,
+    name: String
 ) {
     val pagerState = rememberPagerState(pageCount = { data.size })
 
@@ -30,7 +31,7 @@ fun RecentlyWatchedSection(
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         SectionHeader(
-            text = "Recently Watched",
+            text = name,
             modifier = Modifier.padding(horizontal = 18.dp)
         )
 
