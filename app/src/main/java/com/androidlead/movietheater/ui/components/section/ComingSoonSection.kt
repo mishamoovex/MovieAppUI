@@ -27,8 +27,8 @@ fun ComingSoonSection(
         )
         FlowRow(
             modifier = Modifier.fillMaxWidth(),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalArrangement = Arrangement.spacedBy(18.dp),
+            horizontalArrangement = Arrangement.spacedBy(18.dp),
             maxItemsInEachRow = 2
         ) {
             data.onEach { thumbnail ->
