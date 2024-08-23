@@ -11,7 +11,7 @@ data class FeaturedMovieItem(
     val timeSlots: List<String>
 )
 
-val FeatureMovies = listOf(
+val FeatureMoviesData = listOf(
     FeaturedMovieItem(
         id = 0,
         img = R.drawable.img_movie_poster_2,

@@ -9,9 +9,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.androidlead.movietheater.data.ComingSoonData
-import com.androidlead.movietheater.data.FeatureMovies
+import com.androidlead.movietheater.data.FeatureMoviesData
 import com.androidlead.movietheater.ui.components.section.ComingSoonSection
-import com.androidlead.movietheater.ui.components.FeaturedMoviesSection
+import com.androidlead.movietheater.ui.components.section.FeaturedMoviesSection
 
 @Composable
 fun DiscoverScreen(
@@ -26,7 +26,7 @@ fun DiscoverScreen(
         verticalArrangement = Arrangement.spacedBy(32.dp)
     ) {
         FeaturedMoviesSection(
-            data = FeatureMovies
+            data = FeatureMoviesData
         )
         ComingSoonSection(
             data = ComingSoonData,

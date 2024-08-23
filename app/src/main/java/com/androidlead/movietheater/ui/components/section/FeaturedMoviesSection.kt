@@ -1,4 +1,4 @@
-package com.androidlead.movietheater.ui.components
+package com.androidlead.movietheater.ui.components.section
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -24,6 +24,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.androidlead.movietheater.data.FeaturedMovieItem
+import com.androidlead.movietheater.ui.components.SectionHeader
 
 @Composable
 fun FeaturedMoviesSection(
