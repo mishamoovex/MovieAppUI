@@ -8,17 +8,14 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.androidlead.movietheater.data.ComingSoonData
-import com.androidlead.movietheater.data.FeatureMoviesData
-import com.androidlead.movietheater.data.RecentlyWatchedData
-import com.androidlead.movietheater.data.StreamingData
 import com.androidlead.movietheater.ui.components.section.ComingSoonSection
 import com.androidlead.movietheater.ui.components.section.FeaturedMoviesSection
 import com.androidlead.movietheater.ui.components.section.HorizontalSection
 
 @Composable
 fun DiscoverScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    screenState: DiscoverScreenState
 ) {
     val scrollState = rememberScrollState()
 
@@ -29,18 +26,18 @@ fun DiscoverScreen(
         verticalArrangement = Arrangement.spacedBy(32.dp)
     ) {
         FeaturedMoviesSection(
-            data = FeatureMoviesData
+            data = screenState.featuredMovies
         )
         ComingSoonSection(
-            data = ComingSoonData,
+            data = screenState.upcomingMovies,
             modifier = Modifier.padding(horizontal = 18.dp)
         )
         HorizontalSection(
-            data = RecentlyWatchedData,
+            data = screenState.recentlyWatchedMovies,
             name = "Recently Watched"
         )
         HorizontalSection(
-            data = StreamingData,
+            data = screenState.streamingMovies,
             name = "Stream On Demand"
         )
     }

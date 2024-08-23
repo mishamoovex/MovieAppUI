@@ -8,7 +8,7 @@ data class MovieThumbnailState(
     @DrawableRes val img: Int
 )
 
-val ComingSoonData = listOf(
+val UpcomingMoviesData = listOf(
     MovieThumbnailState(
         id = 0,
         img = R.drawable.img_movie_poster_3
@@ -27,7 +27,7 @@ val ComingSoonData = listOf(
     )
 )
 
-val RecentlyWatchedData = listOf(
+val RecentlyWatchedMoviesData = listOf(
     MovieThumbnailState(
         id = 0,
         img = R.drawable.img_movie_poster_7
@@ -46,7 +46,7 @@ val RecentlyWatchedData = listOf(
     ),
 )
 
-val StreamingData = listOf(
+val StreamingMoviesData = listOf(
     MovieThumbnailState(
         id = 0,
         img = R.drawable.img_movie_poster_5

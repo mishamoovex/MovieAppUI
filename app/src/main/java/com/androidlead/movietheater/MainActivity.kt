@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.androidlead.movietheater.ui.screen.DiscoverScreen
+import com.androidlead.movietheater.ui.screen.DiscoverScreenState
 import com.androidlead.movietheater.ui.theme.MovieTheaterTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
                     DiscoverScreen(
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.padding(innerPadding),
+                        screenState = DiscoverScreenState()
                     )
                 }
             }
