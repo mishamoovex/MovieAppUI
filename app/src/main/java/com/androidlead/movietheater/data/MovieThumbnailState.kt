@@ -45,3 +45,22 @@ val RecentlyWatchedData = listOf(
         img = R.drawable.img_movie_poster_2
     ),
 )
+
+val StreamingData = listOf(
+    MovieThumbnailState(
+        id = 0,
+        img = R.drawable.img_movie_poster_5
+    ),
+    MovieThumbnailState(
+        id = 1,
+        img = R.drawable.img_movie_poster_4
+    ),
+    MovieThumbnailState(
+        id = 2,
+        img = R.drawable.img_movie_poster_8
+    ),
+    MovieThumbnailState(
+        id = 3,
+        img = R.drawable.img_movie_poster_7
+    ),
+)

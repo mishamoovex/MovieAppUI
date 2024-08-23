@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.dp
 import com.androidlead.movietheater.data.ComingSoonData
 import com.androidlead.movietheater.data.FeatureMoviesData
 import com.androidlead.movietheater.data.RecentlyWatchedData
+import com.androidlead.movietheater.data.StreamingData
 import com.androidlead.movietheater.ui.components.section.ComingSoonSection
 import com.androidlead.movietheater.ui.components.section.FeaturedMoviesSection
 import com.androidlead.movietheater.ui.components.section.HorizontalSection
@@ -37,6 +38,10 @@ fun DiscoverScreen(
         HorizontalSection(
             data = RecentlyWatchedData,
             name = "Recently Watched"
+        )
+        HorizontalSection(
+            data = StreamingData,
+            name = "Stream On Demand"
         )
     }
 }
